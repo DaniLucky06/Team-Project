@@ -1,16 +1,5 @@
-<<<<<<< HEAD
 //get the body
 const bodyElement = document.querySelector('body');
-=======
-// Get the element with "parallax" class
-const parallaxElement = document.querySelector('.parallax');
-// Get the second element with "parallax" class
-const secondParallaxElement = document.querySelectorAll('.parallax')[1];
-//body element
-const bodyElement = document.querySelector('body');
-
-
->>>>>>> 47c902d4783883ef0267050769d23cfae1cde5e2
 //get the <div class="main"> element
 const mainElement = document.querySelector('.main');
 //get the "title" ided element
