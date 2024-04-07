@@ -4,10 +4,6 @@ const bodyElement = document.querySelector('body');
 const mainElement = document.querySelector('.main');
 //get the "title" ided element
 const titleElement = document.querySelector('#title');
-//get the 3 paragraphs firstp, secondp, thirdp
-const firstp = document.querySelector('.firstp');
-const secondp = document.querySelector('.secondp');
-const thirdp = document.querySelector('.thirdp');
 
 mainElement.style.transform = 'translate(-50%, ' + bodyElement.clientHeight * 1.1 + 'px)';
 
@@ -16,7 +12,6 @@ mainElement.style.transform = 'translate(-50%, ' + bodyElement.clientHeight * 1.
 function animateParallax() {
     // Get the current scroll position
     const scrollPosition = window.scrollY;
-
     // Calculate the new y position based on the scroll position
     const newYPosition = scrollPosition * 0.5; // Adjust the multiplier as needed
     offset = bodyElement.clientHeight * 0.25;
