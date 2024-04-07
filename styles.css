@@ -5,6 +5,7 @@ body {
     font-family: 'Poppins';
     overflow-x: hidden;
     background-image: url('https://www.kickingdesigns.com/wallpapers-img/2013/09/apples-9-20-2013_4k-ultra-hd.jpg');
+<<<<<<< HEAD
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,10 +52,16 @@ li {
 }
 
 .parallax {
+=======
+>>>>>>> 47c902d4783883ef0267050769d23cfae1cde5e2
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.parallax {
+    opacity: 1;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -87,6 +94,19 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+<<<<<<< HEAD
+=======
+
+}
+
+p {
+    color: white;
+    opacity: 1;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    margin: 20px;
+    width: 60%;
+>>>>>>> 47c902d4783883ef0267050769d23cfae1cde5e2
 }
 
 #title {
@@ -94,7 +114,11 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     font-size: 3rem;
+=======
+    font-size: 2rem;
+>>>>>>> 47c902d4783883ef0267050769d23cfae1cde5e2
     font-family:'Poppins';
     width: fit-content;
 }
