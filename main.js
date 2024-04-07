@@ -18,11 +18,6 @@ function animateParallax() {
     offset = 0
     titleElement.style.opacity = scrollPosition > offset ? Math.max(1 - (scrollPosition - offset) / 500, 0) : 1;
 
-    parallaxElement.style.backdropFilter = `blur(${scrollPosition / 50}px)`;
-    mainElement.style.backdropFilter = `blur(${scrollPosition / 50}px)`;
-    // opacity relative to scroll position and window height
-    mainElement.style.opacity = scrollPosition / window.innerHeight;
-
     // Call the animation function on the next frame
     requestAnimationFrame(animateParallax);
 }
