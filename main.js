@@ -1,13 +1,11 @@
-// Get the element with "parallax" class
-const parallaxElement = document.querySelector('.parallax');
-// Get the second element with "parallax" class
-const secondParallaxElement = document.querySelectorAll('.parallax')[1];
-
-
+//get the body
+const bodyElement = document.querySelector('body');
 //get the <div class="main"> element
 const mainElement = document.querySelector('.main');
 //get the "title" ided element
 const titleElement = document.querySelector('#title');
+
+mainElement.style.transform = 'translate(-50%, ' + bodyElement.clientHeight + 'px)';
 
 
 // Animation function to move the element's y position
@@ -17,8 +15,8 @@ function animateParallax() {
 
     // Calculate the new y position based on the scroll position
     const newYPosition = scrollPosition * 0.5; // Adjust the multiplier as needed
-    titleElement.style.transform = `translate(-50%, ${newYPosition - titleElement.clientHeight}px)`;
-    titleElement.style.opacity = Math.max(1 - scrollPosition / 1000, 100 / scrollPosition);
+    offset = 0
+    titleElement.style.opacity = scrollPosition > offset ? Math.max(1 - (scrollPosition - offset) / 500, 0) : 1;
 
     // Call the animation function on the next frame
     requestAnimationFrame(animateParallax);
