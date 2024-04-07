@@ -4,6 +4,10 @@ const bodyElement = document.querySelector('body');
 const mainElement = document.querySelector('.main');
 //get the "title" ided element
 const titleElement = document.querySelector('#title');
+//get the 3 paragraphs firstp, secondp, thirdp
+const firstp = document.querySelector('.firstp');
+const secondp = document.querySelector('.secondp');
+const thirdp = document.querySelector('.thirdp');
 
 mainElement.style.transform = 'translate(-50%, ' + bodyElement.clientHeight + 'px)';
 
