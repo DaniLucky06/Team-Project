@@ -9,7 +9,7 @@ const firstp = document.querySelector('.firstp');
 const secondp = document.querySelector('.secondp');
 const thirdp = document.querySelector('.thirdp');
 
-mainElement.style.transform = 'translate(-50%, ' + bodyElement.clientHeight + 'px)';
+mainElement.style.transform = 'translate(-50%, ' + bodyElement.clientHeight * 1.1 + 'px)';
 
 
 // Animation function to move the element's y position
@@ -19,7 +19,7 @@ function animateParallax() {
 
     // Calculate the new y position based on the scroll position
     const newYPosition = scrollPosition * 0.5; // Adjust the multiplier as needed
-    offset = 0
+    offset = bodyElement.clientHeight * 0.25;
     titleElement.style.opacity = scrollPosition > offset ? Math.max(1 - (scrollPosition - offset) / 500, 0) : 1;
 
     // Call the animation function on the next frame

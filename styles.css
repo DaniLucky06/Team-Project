@@ -39,6 +39,14 @@ p {
     font-family: 'Poppins';
     font-size: 2rem;
     margin: 20px;
+    text-align: justify;
+}
+
+span {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    margin: 20px;
+    text-align: justify;
 }
 
 a:visited, a:link {
@@ -48,6 +56,11 @@ a:visited, a:link {
 
 li {
     padding: 5px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    margin: 20px;
 }
 
 .parallax {
@@ -117,7 +130,7 @@ ul {
 }
 
 .firstp {
-    background: rgba( 0, 0, 0, 0.7 );
+    background: rgba( 0, 0, 0, 0.4 );
 }
 
 .secondp {
@@ -125,11 +138,39 @@ ul {
 }
 
 .thirdp {
+    background: rgba( 0, 0, 0, 0.6 );
+}
+
+.fourthp {
     background: rgba( 0, 0, 0, 0.7 );
+}
+
+.fifthp {
+    background: rgba( 0, 0, 0, 0.8 );
+}
+
+.sixthp {
+    background: rgba( 0, 0, 0, 0.9 );
+}
+
+.sourcep {
+    background: rgba( 0, 0, 0, 1 );
 }
 
 #moreinfo {
     font-size: 1rem;
-    color: rgb(234, 0, 255);
-    margin: 40px;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.source {
+    font-size: 1.5rem;
+}
+.source::marker {
+    color: rgb(173, 0, 0);
 }
